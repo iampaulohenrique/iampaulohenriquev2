@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root {
+    --corAmarela: #f7cd2a;
+    --corAzul: #17043B;
+    --corbranca: #FFFFFF;
+    --corAzulEscuro: #090117;
+    --CorCinza: #8d8d8d;    
+
+}
+body {
+    background-color: var(--corAzulEscuro);
+    
+    
+}
+
+
+.interface {
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--corbranca);
+    border-radius: 8px;
+    color: var(--corbranca);
+    cursor: pointer;
+    font: 1.1rem;
+    transition: .5s;
+}
+
+
+button:hover {
+    background-color: var(--corAmarela);
+    color: var(--corAzul);
+}
+
+h1.titulo-section {
+font-size: 4rem;
+color: var(--corbranca);
+}
+h1.titulo-section span{
+    color: var(--corAmarela);
+}
+
+/* Estido do cabeçalho */
+
+header {
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logotipo-cabecalho img {
+    max-width: 200px;
+}
+
+header nav.menu-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+
+header nav.menu-desktop a {
+    color: var(--corbranca);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+header nav.menu-desktop a:hover {
+    color: var(--corAmarela);
+}
+
+header nav.menu-desktop button {
+    width: 144px;
+    height: 48px;
+}
+
+/* ESTILO DA HEADER */
+
+section.hero {
+    background-color: var(--corAzul);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+    background-size: 50px 50px, 50px 50px, auto;
+    background-position: center;
+    background-repeat: repeat, repeat, no-repeat;
+    padding-top: 144px;
+}
+
+.hero>.interface {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .img-hero {
+    line-height: 0;
+}
+
+.hero .texto-hero h1 {
+    font-size: 3rem;
+    color: var(--corbranca);
+    font-weight: 300;
+}
+
+.hero .texto-hero h1 span {
+    color: var(--corAmarela);
+    display: block;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.hero .texto-hero p {
+    color: var(--corbranca);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .texto-hero button {
+    width: 200px;
+    height: 48px;
+}
+
+/* ESTILO SOBRE MIM */
+
+section.sobre-mim{
+    padding: 80px 0;
+}
+
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 96px;
+}
+.sobre-mim .texto-sobre p {
+    color: var(--CorCinza);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.sobre-mim .btn-redes button{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Sessão Habilidades */
+section.skills{
+    padding: 80px 0;
+    background-color: var(--corAzul);
+}
