@@ -168,7 +168,58 @@ section.sobre-mim{
 }
 
 /* Sessão Habilidades */
-section.skills{
+section.skills {
     padding: 80px 0;
     background-color: var(--corAzul);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to left, var(--corAzul) 100%, var(--corAmarela) 0%);
+    background-size: 50px 50px, 50px 50px, auto;
+    background-position: center;
+    background-repeat: repeat, repeat, no-repeat;
+}
+
+.skills article {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+.skills .box-skills {
+    background-color: var(--corAzulEscuro);
+    padding: 24px;
+    border-radius: 16px;
+    
+}
+
+.box-skills .icon-skills {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 16px;
+
+}
+.box-skills .icon-skills img{
+max-width: 80px;
+}
+
+.icon-skills h2{
+    color: var(--corbranca);
+}
+.icon-skills h2 span{
+    color: var(--corAmarela);
+}
+.box-skills p{
+    color: var(--CorCinza);
+    text-align: justify;
+    line-height: 1.6;
+}
+.skills .btn-contato{
+    text-align: center;
+}
+.skills .btn-contato button{   
+    width: 200px;
+    height: 48px;
+
 }
