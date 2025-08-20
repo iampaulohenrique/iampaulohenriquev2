@@ -10,13 +10,14 @@
     --corAzul: #17043B;
     --corbranca: #FFFFFF;
     --corAzulEscuro: #090117;
-    --CorCinza: #8d8d8d;    
+    --CorCinza: #8d8d8d;
 
 }
+
 body {
     background-color: var(--corAzulEscuro);
-    
-    
+
+
 }
 
 
@@ -43,10 +44,11 @@ button:hover {
 }
 
 h1.titulo-section {
-font-size: 4rem;
-color: var(--corbranca);
+    font-size: 4rem;
+    color: var(--corbranca);
 }
-h1.titulo-section span{
+
+h1.titulo-section span {
     color: var(--corAmarela);
 }
 
@@ -143,16 +145,17 @@ section.hero {
 
 /* ESTILO SOBRE MIM */
 
-section.sobre-mim{
+section.sobre-mim {
     padding: 80px 0;
 }
 
-.sobre-mim > .interface{
+.sobre-mim>.interface {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 96px;
 }
+
 .sobre-mim .texto-sobre p {
     color: var(--CorCinza);
     text-align: justify;
@@ -160,7 +163,7 @@ section.sobre-mim{
     margin: 24px 0;
 }
 
-.sobre-mim .btn-redes button{
+.sobre-mim .btn-redes button {
     width: 56px;
     height: 56px;
     font-size: 24px;
@@ -186,11 +189,12 @@ section.skills {
     gap: 16px;
     margin: 24px 0;
 }
+
 .skills .box-skills {
     background-color: var(--corAzulEscuro);
     padding: 24px;
     border-radius: 16px;
-    
+
 }
 
 .box-skills .icon-skills {
@@ -200,25 +204,30 @@ section.skills {
     margin-bottom: 16px;
 
 }
-.box-skills .icon-skills img{
-max-width: 80px;
+
+.box-skills .icon-skills img {
+    max-width: 80px;
 }
 
-.icon-skills h2{
+.icon-skills h2 {
     color: var(--corbranca);
 }
-.icon-skills h2 span{
+
+.icon-skills h2 span {
     color: var(--corAmarela);
 }
-.box-skills p{
+
+.box-skills p {
     color: var(--CorCinza);
     text-align: justify;
     line-height: 1.6;
 }
-.skills .btn-contato{
+
+.skills .btn-contato {
     text-align: center;
 }
-.skills .btn-contato button{   
+
+.skills .btn-contato button {
     width: 200px;
     height: 48px;
 
@@ -227,30 +236,48 @@ max-width: 80px;
 
 /* TRABALHOS */
 
-section.projetos-da-faculdade{
+section.projetos-da-faculdade {
     padding: 80px 0;
 }
 
-.projetos-da-faculdade p{
+.projetos-da-faculdade p {
     color: var(--CorCinza);
     margin-bottom: 36px;
 }
 
-.projetos-da-faculdade .trabalhos-container{
-display: grid;
-grid-template: 1fr / 1fr 1fr 1fr 1fr;
-gap: 24px;
+.projetos-da-faculdade .trabalhos-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    gap: 24px;
 }
 
-.trabalhos-container .trabalho-box{
+.trabalhos-container .trabalho-box {
     min-width: 200px;
     height: 400px;
     border: 2px solid var(--corAmarela);
     border-radius: 10px;
+    background-size: cover;
+    background-position: 0% 0%;
+    transition: background-position 10s;
+}
+
+.trabalhos-container .trabalho-box:hover {
+    background-position: center bottom;
+}
+
+
+
+.trabalhos-container .trabalho1 {
+    background-image: url(../imagens/showspot.webp);
 
 }
-.trabalho-container .trabalho1 {
-    background-image: url(../imagens/elevador.webp);
 
+.trabalhos-container .trabalho2 {
+    background-image: url(../imagens/pensar-e-comunicar.webp);
+
+}
+
+.trabalhos-container .trabalho3 {
+    background-image: url(../imagens/elevador.webp);
 
 }
