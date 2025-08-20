@@ -275,8 +275,9 @@ section.projetos-da-faculdade {
  align-items: center;
  justify-content: center;
  color: var(--corbranca);
- font-size: 18px;
- font-weight: 500px;
+ font-size: 1.5rem;
+ font-weight: 600;
+ text-shadow: #090117 2px 1px 1px;
 
  opacity: 0;
 
@@ -284,7 +285,7 @@ section.projetos-da-faculdade {
 
 .trabalhos-container .trabalho-box .nome-trabalho:hover{
     opacity: 1;
-    transition: .2;
+    transition: .5;
 }
 
 .trabalhos-container .trabalho-box:hover {
@@ -311,3 +312,83 @@ section.projetos-da-faculdade {
     background-image: url(../imagens/screencapture-127-0-0-1-5501-index-html-2025-08-20-19_03_44.webp);
 
 }
+
+
+/* Estilo do form */
+
+section.contato {
+    padding: 80px 0;
+    background-color: var(--corAzul);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to left, var(--corAzul) 100%, var(--corAmarela) 0%);
+    background-size: 50px 50px, 50px 50px, auto;
+    background-position: center;
+    background-repeat: repeat, repeat, no-repeat;
+    
+}
+
+.contato > .interface {
+
+display: flex;
+justify-content: space-between;
+
+}
+
+.contato .txt-contato p {
+    color: var(--CorCinza);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.contato .txt-contato p i{
+    color: var(--corAmarela);
+    font-size: 2rem;
+
+}
+
+
+.contato form{
+width: 50%;
+
+}
+.contato form input, .contato form .textarea{
+    width: 100%;
+    padding: 16px 10px;
+    background: transparent;
+    border: solid var(--corAmarela);
+    outline: none;
+    color: var(--corbranca);
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.contato form .tel-proj{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contato form .btn-enviar input{
+    border-color: var(--corbranca);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem ;
+}
+.contato form .btn-enviar input:hover{
+    background-color: var(--corAmarela);
+    color: var(--corAzul);
+    border-color: var(--corAmarela);
+}
+
