@@ -13,7 +13,9 @@
     --CorCinza: #8d8d8d;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--corAzulEscuro);
 
@@ -59,6 +61,9 @@ header {
     padding: 16px 0;
     position: fixed;
     width: 100%;
+    background-image: linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+    z-index: 100;
+       
 }
 
 header>.interface {
@@ -163,7 +168,8 @@ section.sobre-mim {
     margin: 24px 0;
 }
 
-.sobre-mim .btn-redes button {
+.sobre-mim .btn-redes button,
+footer .btn-redes button {
     width: 56px;
     height: 56px;
     font-size: 24px;
@@ -260,30 +266,30 @@ section.projetos-da-faculdade {
     background-position: 0% 0%;
     transition: background-position 10s;
     position: relative;
-   
+
 }
 
 .trabalhos-container .trabalho-box .nome-trabalho {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background-color: #17043b2d;
- border-radius: 10px;
- display: flex;
- align-items: center;
- justify-content: center;
- color: var(--corbranca);
- font-size: 1.5rem;
- font-weight: 600;
- text-shadow: #090117 2px 1px 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #17043b2d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--corbranca);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: #090117 2px 1px 1px;
 
- opacity: 0;
+    opacity: 0;
 
 }
 
-.trabalhos-container .trabalho-box .nome-trabalho:hover{
+.trabalhos-container .trabalho-box .nome-trabalho:hover {
     opacity: 1;
     transition: .5;
 }
@@ -308,6 +314,7 @@ section.projetos-da-faculdade {
     background-image: url(../imagens/elevador.webp);
 
 }
+
 .trabalhos-container .trabalho4 {
     background-image: url(../imagens/screencapture-127-0-0-1-5501-index-html-2025-08-20-19_03_44.webp);
 
@@ -326,13 +333,13 @@ section.contato {
     background-size: 50px 50px, 50px 50px, auto;
     background-position: center;
     background-repeat: repeat, repeat, no-repeat;
-    
+
 }
 
-.contato > .interface {
+.contato>.interface {
 
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -345,18 +352,20 @@ justify-content: space-between;
     margin: 20px;
 }
 
-.contato .txt-contato p i{
+.contato .txt-contato p i {
     color: var(--corAmarela);
     font-size: 2rem;
 
 }
 
 
-.contato form{
-width: 50%;
+.contato form {
+    width: 50%;
 
 }
-.contato form input, .contato form .textarea{
+
+.contato form input,
+.contato form .textarea {
     width: 100%;
     padding: 16px 10px;
     background: transparent;
@@ -368,27 +377,46 @@ width: 50%;
     margin-bottom: 8px;
 }
 
-.contato form .tel-proj{
+.contato form .tel-proj {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.contato form textarea{
+.contato form textarea {
     resize: none;
     height: 150px;
 }
 
-.contato form .btn-enviar input{
+.contato form .btn-enviar input {
     border-color: var(--corbranca);
     transition: .5s;
     cursor: pointer;
     font-weight: 600;
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
 }
-.contato form .btn-enviar input:hover{
+
+.contato form .btn-enviar input:hover {
     background-color: var(--corAmarela);
     color: var(--corAzul);
     border-color: var(--corAmarela);
 }
 
+/* Rodapé */
+footer {
+    padding: 40px 0;
+}
+
+footer>.interface {
+    display: flex;
+    justify-content: space-between;
+    color: var(--CorCinza);
+    gap: 1.2rem;
+
+}
+
+footer .logo-footer img {
+    max-width: 160px;
+    margin-bottom: 16px;
+
+}
