@@ -1,0 +1,188 @@
+@media (max-width: 768px) {
+    h1.titulo-section {
+        font-size: 3rem;
+    }
+
+    /* estilo do menu */
+    header {
+        background-image: none;
+        background-color: var(--corAmarela);
+
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .hero>.interface {
+        text-align: center;
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+
+    /* estilo da hero */
+    section.hero {
+        background-color: var(--corAzul);
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(to top, var(--corAzul) 95%, var(--corAmarela) 5%);
+        background-size: 50px 50px, 50px 50px, auto;
+        background-position: center;
+        background-repeat: repeat, repeat, no-repeat;
+        padding-top: 144px;
+    }
+
+    .hero>.interface {
+        text-align: center;
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+
+
+    .hero .texto-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .texto-hero h1 span {
+
+        font-size: 2.5rem;
+    }
+
+    .hero .texto-hero p {
+        font-size: 1rem;
+    }
+
+
+    .hero .img-hero img {
+        max-width: 320px;
+    }
+
+    /* sobre mim */
+
+
+
+    .sobre-mim>.interface {
+
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .sobre-mim .img-sobre img {
+        max-width: 300px;
+
+    }
+
+    /* HABILIDADES  */
+    .skills article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+    }
+
+    .skills .btn-contato {
+        text-align: center;
+        gap: 32px;
+    }
+
+    .skills h1 {
+        font-size: 2.4rem;
+    }
+
+    /* TRABALHOS */
+
+    section.projetos-da-faculdade {
+        padding: 80px 0;
+    }
+
+
+    .projetos-da-faculdade .trabalhos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 24px;
+    }
+
+    .projetos-da-faculdade h1 {
+        font-size: 2.2rem;
+    }
+
+    .projetos-da-faculdade p {
+        gap: 32px;
+    }
+
+    /* formulario */
+
+    section.contato {
+        padding: 80px 0;
+        background-color: var(--corAzul);
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(to left, var(--corAzul) 100%, var(--corAmarela) 0%);
+        background-size: 50px 50px, 50px 50px, auto;
+        background-position: center;
+        background-repeat: repeat, repeat, no-repeat;
+
+    
+
+    }
+
+    .contato>.interface {
+
+        flex-direction: column;
+        gap: 32px;
+
+    }
+
+    .contato .txt-contato p {
+      
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .contato .txt-contato p i {
+        color: var(--corAmarela);
+        font-size: 1.5rem;
+
+    }
+
+
+    .contato form {
+        width: 100%;
+
+    }
+
+    .contato form input,
+    .contato form .textarea {
+        width: 100%;
+        padding: 16px 10px;
+        background: transparent;
+        border: solid var(--corAmarela);
+        outline: none;
+        color: var(--corbranca);
+        font-size: 1.1rem;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+
+    .contato form .tel-proj {
+        display: block;
+    }
+/* rodapé */
+
+
+footer>.interface {
+    display: flex;
+    justify-content: space-between;
+    color: var(--CorCinza);
+    gap: 32px;
+    flex-direction: column-reverse ;
+    text-align: center;
+
+}
+
+}
